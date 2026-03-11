@@ -1,10 +1,15 @@
 # weibo_one_spider - Weibo Aggregator Spider
 
-**Author:** @马哥python说 (MaGe Python)
+**Author:** [@马哥python说](https://github.com/mashukui)
 
 ---
+<p align="center">
+<a href="README.md">中文版 README</a> | <a href="README.en.md">English README</a>
+</p>
 
 ## Overview
+<img width="2158" height="456" alt="image" src="https://github.com/user-attachments/assets/df4e8033-d111-4a68-9d5c-e29f2be3496c" />
+
 
 Weibo is one of China's most influential social media platforms, known for its real-time nature and massive KOL (Key Opinion Leader) user base, making it the first choice for opinion outbreaks and information dissemination.
 
@@ -31,28 +36,33 @@ While these tools were stable and comprehensive in data collection, some users r
 ### Feature 1: Collect Posts by Keyword
 
 **Software Interface:**
+<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/de6fbe48-5f29-4968-a598-38133942fb8c" />
 
 **Collection Results** (11 fields):
 - Keyword, Page Number, Weibo ID, Weibo Link, User Nickname, User Profile Link, Publish Time, Retweet Count, Comment Count, Like Count, Weibo Content
+<img width="1440" height="696" alt="image" src="https://github.com/user-attachments/assets/fd3e1d58-3517-4a7d-a372-a702ba5e127d" />
 
 ---
 
 ### Feature 2: Collect Posts by Creator Profile Link
 
 **Software Interface:**
+<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/19882266-a804-4998-af68-c633e14b05b3" />
 
 **Collection Results** (13 fields):
 - Creator Nickname, Creator ID, Page Number, Weibo ID, Weibo Bid, Weibo Link, Publish Time, Publish Platform, Retweet Count, Comment Count, Like Count, Topic Tags, Weibo Content
+<img width="1440" height="695" alt="image" src="https://github.com/user-attachments/assets/dc976aeb-1697-424a-a3cb-ffdb61e63750" />
 
 ---
 
 ### Feature 3: Collect Comments by Post Link
 
 **Software Interface:**
+<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/85dfe19a-f221-4e15-802b-3b1aa125ebfc" />
 
 **Collection Results** (14 fields):
 - Weibo Link, Weibo ID, Page Number, Commenter Nickname, Commenter Follower Count, Commenter Following Count, Commenter Profile Link, Commenter Gender, Commenter Bio, Comment Time, Like Count, Comment Content IP Location, Comment Level, Comment Content
-
+<img width="1440" height="694" alt="image" src="https://github.com/user-attachments/assets/0247f3c9-d420-4bfe-a4c5-368f0f6ac21e" />
 ---
 
 ## Important Notes
@@ -163,13 +173,14 @@ def get_logger(self):
 
 ## Setup Instructions
 
-1. Before starting, use the built-in **"Cookie Tool"** to automatically configure your cookie
+1. Before starting, use the built-in **"Cookie Tool"** to automatically configure your cookie<img width="1706" height="1250" alt="image" src="https://github.com/user-attachments/assets/ba2733d8-9075-42d2-803e-2aa3fb20dce3" />
+
 2. After login, select the function module you need (Search Posts / Creator Posts / Comments)
 3. Set relevant parameters (keywords, time range, creator link, etc.)
 4. Click **"Start Execution"** and wait for collection to complete (you can view progress in real-time)
 5. After completion, check the CSV data files or images in the default current folder
 
-**Demo Video:** [Tool Demo] Weibo Aggregator Spider
+**Demo Video:** [Tool Demo](https://mp.weixin.qq.com/s/a5z2hQM66XCMAKomhGeqzw)
 
 ---
 
@@ -192,6 +203,7 @@ def get_logger(self):
 
 **Option 3: Manual Setup**
 - After payment, add WeChat (493882434) to connect
+<img width="2324" height="604" alt="收款码v5" src="https://github.com/user-attachments/assets/8bf1ac21-3207-4c7b-ac29-937bdcb36398" />
 
 ---
 
@@ -206,8 +218,9 @@ def get_logger(self):
 
 This software is independently developed and maintained by me, with long-term updates and stable operation guaranteed.
 
-**Official Account:** "老男孩的平凡之路" (Old Boy's Ordinary Path)
-**Reply "爬微博聚合软件" (Weibo Aggregator Spider) in the account's backend to get the latest installation package.
+**Official Account:** "老男孩的平凡之路"
+**Reply "爬微博聚合软件" in the account's backend to get the latest installation package.
+<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/4ca80801-0ac1-4cc2-924d-10c0a95eaa2e" />
 
 ---
 
