@@ -1,7 +1,5 @@
 # weibo_one_spider
 > 马哥原创：爬微博聚合软件。支持3个功能，含：根据搜索关键词爬帖子、根据主页链接爬帖子、根据帖子爬评论
-> 
-> 本工具仅限学术交流使用，严格遵循相关法律法规，符合平台内容的合法及合规性，禁止用于任何商业用途！
 
 <p align="center">
 <a href="README.md">中文版 README</a> | <a href="README.en.md">English README</a>
