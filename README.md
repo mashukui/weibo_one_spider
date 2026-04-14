@@ -1,5 +1,9 @@
 # weibo_one_spider
-> 马哥原创：爬微博聚合软件。支持3个功能，含：根据搜索关键词爬帖子、根据主页链接爬帖子、根据帖子爬评论
+> 马哥原创：爬微博聚合软件，GUI界面软件友好，日卡试用
+> 
+> ✅根据搜索关键词爬帖子 ✅根据主页链接爬帖子 ✅根据帖子爬评论
+> 
+> [点这里⬇️下载](https://github.com/mashukui/weibo_one_spider/releases/)
 
 <p align="center">
 <a href="README.md">中文版 README</a> | <a href="README.en.md">English README</a>
@@ -175,9 +179,6 @@ def get_logger(self):
 
 开通入口：https://kjyjf.xetlk.com/s/1x4Q4F
 
-**方式三：手动开通，付费后加v（493882434）对接**
-<img width="2324" height="604" alt="收款码v5" src="https://github.com/user-attachments/assets/5e92edbd-625c-41dd-bcdc-78600eb5c535" />
-
 ## 4.2 一机一码
 为防止软件被恶意转卖，采用一机一码机制，一个卡密只能在一台电脑运行、不可多电脑运行。
 ## 4.3 软件多开
@@ -187,4 +188,4 @@ def get_logger(self):
 软件由本人独立原创开发，长期维护更新，提供稳定运行。
 
 # 五、软件获取
-公众号"**老男孩的平凡之路**"，后台回复"**爬微博聚合软件**"获取最新版软件安装包。<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/a6f577f4-4d20-4757-8369-befa01e69f1d" />
+公众号"**老男孩的平凡之路**"，后台回复"**爬微博聚合软件**"获取最新版软件安装包。[点这里直接下载](https://github.com/mashukui/weibo_one_spider/releases/)<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/a6f577f4-4d20-4757-8369-befa01e69f1d" />
