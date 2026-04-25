@@ -1,9 +1,9 @@
 # weibo_one_spider
-> 马哥原创：爬微博聚合软件，GUI界面软件友好，日卡试用
+> 💡马哥原创：爬微博聚合软件，GUI界面软件友好，日卡试用
 > 
 > ✅根据搜索关键词爬帖子 ✅根据主页链接爬帖子 ✅根据帖子爬评论
 > 
-> [点这里⬇️下载](https://github.com/mashukui/weibo_one_spider/releases/)
+> [⬇️点这里下载最新版](https://github.com/mashukui/weibo_one_spider/releases/)
 
 <p align="center">
 <a href="README.md">中文版 README</a> | <a href="README.en.md">English README</a>
@@ -164,20 +164,16 @@ def get_logger(self):
 
 # 四、付费说明
 ## 4.1 卡密说明
-付费如下：
+费用如下：
 ```python
-日卡：使用期限1天，39元。日卡仅能购买一次。适合试用等临时需求
-月卡：使用期限1个月，149元。月卡可多次购买。适合短期采集需求
-季卡：使用期限3个月，399元。季卡可多次购买。适合中期采集需求
-年卡：使用期限1年，799元。年卡可多次购买。适合长期采集需求
+日卡：使用期限1天，39元。适合试用等临时需求
+月卡：使用期限1个月，149元。适合短期采集需求
+季卡：使用期限3个月，399元。适合中期采集需求
+年卡：使用期限1年，799元。适合长期采集需求
 ```
-**方式一：自助开通（推荐）**
 
 开通入口：https://mgnb.pro/product/weibo
 
-**方式二：自助开通**
-
-开通入口：https://kjyjf.xetlk.com/s/1x4Q4F
 
 ## 4.2 一机一码
 为防止软件被恶意转卖，采用一机一码机制，一个卡密只能在一台电脑运行、不可多电脑运行。
@@ -188,4 +184,4 @@ def get_logger(self):
 软件由本人独立原创开发，长期维护更新，提供稳定运行。
 
 # 五、软件获取
-公众号"**老男孩的平凡之路**"，后台回复"**爬微博聚合软件**"获取最新版软件安装包。[点这里直接下载](https://github.com/mashukui/weibo_one_spider/releases/)<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/a6f577f4-4d20-4757-8369-befa01e69f1d" />
+公众号"**老男孩的平凡之路**"，后台回复"**爬微博聚合软件**"获取最新版软件安装包。[或点这里直接下载](https://github.com/mashukui/weibo_one_spider/releases/)<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/a6f577f4-4d20-4757-8369-befa01e69f1d" />
