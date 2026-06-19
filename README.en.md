@@ -1,229 +1,243 @@
-# weibo_one_spider - Weibo Aggregator Spider
+# weibo_one_spider
 
-**Author:** [@马哥python说](https://github.com/mashukui)
+> 🔥 Weibo data collection tool / Weibo crawler GUI, supporting keyword Weibo post collection, profile post collection, comment collection, user profile collection, and CSV export.
+>
+> 💡 Supports Windows/macOS with no Python environment required. This repository is used for software introduction, release distribution, usage documentation, and issue feedback. The complete source code is not publicly available.
+>
+> [⬇️Download Latest Release](https://github.com/mashukui/weibo_one_spider/releases/) | [🎬Video Demo](https://www.bilibili.com/video/BV1ayvYBNEFb/) | [💳Purchase Access](https://mgnb.pro/product/weibo)
 
----
 <p align="center">
-<a href="README.md">中文版 README</a> | <a href="README.en.md">English README</a>
+  <a href="README.md">简体中文 README</a> | <a href="README.en.md">English README</a>
 </p>
 
-## Overview
-<img width="2158" height="456" alt="image" src="https://github.com/user-attachments/assets/df4e8033-d111-4a68-9d5c-e29f2be3496c" />
+## 👋 Overview
 
+`weibo_one_spider` is a desktop GUI tool designed for Weibo data collection scenarios. It combines keyword Weibo post collection, creator profile post collection, post comment collection, and user profile collection into one client. Users do not need to install or configure a Python environment. Download the client, log in, and start using it.
 
-Weibo is one of China's most influential social media platforms, known for its real-time nature and massive KOL (Key Opinion Leader) user base, making it the first choice for opinion outbreaks and information dissemination.
+It is suitable for the following scenarios:
 
-To meet different data collection needs, I previously developed three separate tools:
-- **Search Spider**: For collecting posts based on search keywords
-- **Creator Spider**: For collecting content from specific creators
-- **Comment Spider**: For collecting Weibo comments
+| Scenario | Description |
+| --- | --- |
+| ✅ Academic research | Collect Weibo topics, posts, comments, and user profiles for communication, sociology, journalism, and related research |
+| ✅ Public opinion analysis | Track hot events and public issues, and analyze discussion trends, sentiment shifts, and propagation paths |
+| ✅ Text mining | Export Weibo post text and comments for keyword extraction, topic modeling, sentiment analysis, and related tasks |
+| ✅ Market monitoring | Monitor brand keywords, competitor creator updates, and comment feedback under popular content |
 
-While these tools were stable and comprehensive in data collection, some users reported that when their collection needs involved both posts and comments, they had to frequently switch between software, which affected the user experience. To address this scenario, I officially merged these three tools and launched the new **"Weibo Aggregator Spider"**. This software integrates three core functions: keyword search, creator homepage collection, and comment collection, aiming to provide users with a one-stop solution for Weibo data collection.
+## ⚙️ Features
 
----
+| Feature | Description | Output |
+| --- | --- | --- |
+| ✅ Keyword Weibo post collection | Search Weibo posts by keyword and collect basic post data | CSV |
+| ✅ Profile Weibo post collection | Collect Weibo post lists from creator profile links | CSV |
+| ✅ Comment collection | Collect comment data from Weibo post links | CSV |
+| ✅ User profile collection | Collect user profile, verification, follower, and interaction fields | CSV |
+| ✅ Incremental saving | Save data to CSV after each page to reduce data loss caused by interruptions | CSV |
+| ✅ Runtime logs | Record runtime logs for troubleshooting | logs files |
 
-## Usage Scenarios
+## 🚀 Quick Start
 
-- **Academic Researchers**: Collect Weibo-related topic data for social sentiment analysis, online propagation research, etc.
-- **Marketing Professionals**: Monitor brand keyword search results, competitor creator dynamics, and comment feedback on hot marketing content
-- **Content Creators**: Analyze content styles and trending topics from top creators to provide references for your own creation
-- **Data Enthusiasts**: Collect Weibo data in areas of interest for personalized data analysis and visualization
+1. Open [Releases](https://github.com/mashukui/weibo_one_spider/releases/) and download the latest version.
+2. Extract the package and run the client for your operating system.
+3. Use the built-in cookie helper to configure your cookie.
+4. Log in to the software account.
+5. Select a collection module and enter a keyword, Weibo post link, or creator profile link.
+6. Click "Start" and wait for the collection task to finish.
+7. Check the CSV files and log files in the software directory.
 
----
+## 💻 Supported Platforms
 
-## Features
+| Platform | Support |
+| --- | --- |
+| Windows | Supported. Download and run the Windows client |
+| macOS | Supported. Download and run the macOS client |
 
-### Feature 1: Collect Posts by Keyword
+## 🖼️ Screenshots
 
-**Software Interface:**
-<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/de6fbe48-5f29-4968-a598-38133942fb8c" />
+### Keyword Weibo Post Collection
 
-**Collection Results** (11 fields):
-- Keyword, Page Number, Weibo ID, Weibo Link, User Nickname, User Profile Link, Publish Time, Retweet Count, Comment Count, Like Count, Weibo Content
-<img width="1440" height="696" alt="image" src="https://github.com/user-attachments/assets/fd3e1d58-3517-4a7d-a372-a702ba5e127d" />
+Keyword Weibo post collection interface:
 
----
+![Interface 1: Weibo keyword post search](https://files.mdnice.com/user/32110/b3733f08-bc3c-45c9-816a-a6c4e31bd5f4.jpg)
 
-### Feature 2: Collect Posts by Creator Profile Link
+Keyword Weibo post collection result:
 
-**Software Interface:**
-<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/19882266-a804-4998-af68-c633e14b05b3" />
+![Result 1: Weibo keyword posts](https://files.mdnice.com/user/32110/82fb0f17-ff01-4575-b8eb-d9544698b2db.png)
 
-**Collection Results** (13 fields):
-- Creator Nickname, Creator ID, Page Number, Weibo ID, Weibo Bid, Weibo Link, Publish Time, Publish Platform, Retweet Count, Comment Count, Like Count, Topic Tags, Weibo Content
-<img width="1440" height="695" alt="image" src="https://github.com/user-attachments/assets/dc976aeb-1697-424a-a3cb-ffdb61e63750" />
+### Profile Weibo Post Collection
 
----
+Profile Weibo post collection interface:
 
-### Feature 3: Collect Comments by Post Link
+![Interface 2: Profile post collection](https://files.mdnice.com/user/32110/129dcbc2-2e5c-4c18-9781-6d89504e77e5.jpg)
 
-**Software Interface:**
-<img width="1440" height="1175" alt="image" src="https://github.com/user-attachments/assets/85dfe19a-f221-4e15-802b-3b1aa125ebfc" />
+Profile Weibo post collection result:
 
-**Collection Results** (14 fields):
-- Weibo Link, Weibo ID, Page Number, Commenter Nickname, Commenter Follower Count, Commenter Following Count, Commenter Profile Link, Commenter Gender, Commenter Bio, Comment Time, Like Count, Comment Content IP Location, Comment Level, Comment Content
-<img width="1440" height="694" alt="image" src="https://github.com/user-attachments/assets/0247f3c9-d420-4bfe-a4c5-368f0f6ac21e" />
----
+![Result 2: Profile posts](https://files.mdnice.com/user/32110/2bc591c3-1d37-4bb6-92f4-708c9f592d95.png)
 
-## Important Notes
+### Comment Collection
 
-- Works on both Windows and Mac systems without requiring any programming environment setup
-- Contains three core functions: post collection by keyword, post collection by creator homepage, and comment collection, with support for filtering under different conditions
-- Uses API protocols for data collection (not RPA simulation), ensuring high stability
-- After the software completes, CSV result files are generated in the current folder (the folder where the software is located)
-- Data is saved after each page is collected, not all at once at the end. This prevents data loss from unexpected interruptions (1-2 second request interval between pages)
-- Detailed log files are recorded during collection for easy troubleshooting
+Comment collection interface:
 
----
+![Interface 3: Comment collection from post](https://files.mdnice.com/user/32110/6de6ec3c-4a5f-4e77-8bb9-d36b84158888.jpg)
 
-## Technology Stack
+Comment collection result:
 
-All modules are developed in Python:
+![Result 3: Post comments](https://files.mdnice.com/user/32110/9bafd8c5-06d0-40cb-9b89-d1e4cbeb0220.png)
 
-- **tkinter**: GUI interface
-- **requests**: HTTP requests for the spider
-- **json**: Response data parsing
-- **pandas**: CSV data output
-- **logging**: Runtime log recording
+### User Profile Collection
 
-**Note:** Due to copyright concerns, source code is not publicly available. Only the software itself is provided to users.
+User profile collection interface:
 
----
+![Interface 4: User profile collection](https://files.mdnice.com/user/32110/d9925556-0d44-4024-adba-b63b832cc9ab.jpg)
 
-## Code Examples
+User profile data 1/2:
 
-### Sending Requests and Parsing Data
+![v2.0 data 1](https://files.mdnice.com/user/32110/3cda495c-36aa-49b5-835f-83c4c8ebac8b.png)
 
-```python
-# Send request
-r = requests.get(url, headers=h1, params=params)
-# Parse data
-json_data = r.json()
-```
+User profile data 2/2:
 
-### Parsing Response Data (Example: Comment Content)
+![v2.0 data 2](https://files.mdnice.com/user/32110/94e2d80b-8598-414d-b18a-d3b8499409f0.png)
 
-```python
-for data in json_data['data']:
-    # Comment content
-    text = data['text_raw']
-    text_list.append(text)
-```
+## 📊 Output Fields
 
-### Saving Data to CSV File
+The software generates different CSV files based on the selected collection module. Since there are many fields, the main field groups are shown first. You can expand the sections below to view the full field lists.
 
-```python
-# Save data
-df = pd.DataFrame({
-    'Weibo Link': weibo_url,
-    'Weibo ID': weibo_id,
-    'Page Number': page,
-    'Commenter Nickname': screen_name_list,
-    'Commenter Follower Count': followers_count_list,
-    'Commenter Following Count': friends_count_list,
-    'Commenter Profile Link': user_home_url_list,
-    'Commenter Gender': gender_list,
-    'Commenter Bio': desc_list,
-    'Comment Time': create_time_list,
-    'Like Count': like_counts_list,
-    'Comment Content IP Location': source_list,
-    'Comment Level': comment_level_list,
-    'Comment Content': text_list,
-})
+### Keyword Weibo Post Data
 
-# Save CSV file
-df.to_csv(self.result_file, mode='a+', index=False, header=header, encoding='utf_8_sig')
-self.tk_show('Results saved successfully: {}'.format(self.result_file))
-```
+- Collection info: keyword, page
+- Weibo post info: Weibo id, Weibo link, published time, Weibo content
+- User info: user nickname, user profile link
+- Interaction data: reposts, comments, likes
 
-### Copyright Footer
+<details>
+<summary>View full keyword Weibo post fields</summary>
 
-```python
-# Copyright information
-copyright = tk.Label(root, text='@马哥python说 All rights reserved.', font=('SimSun', 10), fg='grey')
-copyright.place(x=290, y=625)
-```
+Keyword, page, Weibo id, Weibo link, user nickname, user profile link, published time, reposts, comments, likes, Weibo content
 
-### Logging Module
+</details>
 
-```python
-def get_logger(self):
-    self.logger = logging.getLogger(__name__)
-    # Log format
-    formatter = '[%(asctime)s-%(filename)s][%(funcName)s-%(lineno)d]--%(message)s'
-    # Log level
-    self.logger.setLevel(logging.DEBUG)
-    # Console log
-    sh = logging.StreamHandler()
-    log_formatter = logging.Formatter(formatter, datefmt='%Y-%m-%d %H:%M:%S')
-    # Info log filename
-    info_file_name = time.strftime("%Y-%m-%d") + '.log'
-    # Save to specific directory
-    case_dir = r'./logs/'
-    info_handler = TimedRotatingFileHandler(
-        filename=case_dir + info_file_name,
-        when='MIDNIGHT',
-        interval=1,
-        backupCount=7,
-        encoding='utf-8'
-    )
-```
+### Profile Weibo Post Data
 
----
+- Collection info: page
+- Creator info: creator nickname, creator id
+- Weibo post info: Weibo id, Weibo bid, Weibo link, published time, source, topic tags, Weibo content
+- Interaction data: reposts, comments, likes
 
-## Setup Instructions
+<details>
+<summary>View full profile Weibo post fields</summary>
 
-1. Before starting, use the built-in **"Cookie Tool"** to automatically configure your cookie<img width="1706" height="1250" alt="image" src="https://github.com/user-attachments/assets/ba2733d8-9075-42d2-803e-2aa3fb20dce3" />
+Creator nickname, creator id, page, Weibo id, Weibo bid, Weibo link, published time, source, reposts, comments, likes, topic tags, Weibo content
 
-2. After login, select the function module you need (Search Posts / Creator Posts / Comments)
-3. Set relevant parameters (keywords, time range, creator link, etc.)
-4. Click **"Start Execution"** and wait for collection to complete (you can view progress in real-time)
-5. After completion, check the CSV data files or images in the default current folder
+</details>
 
-**Demo Video:** [Tool Demo](https://mp.weixin.qq.com/s/a5z2hQM66XCMAKomhGeqzw)
+### Comment Data
 
----
+- Collection info: Weibo link, Weibo id, page
+- Commenter info: commenter nickname, commenter followers, commenter following, commenter profile link, commenter gender, commenter bio
+- Comment info: comment time, likes, comment IP location, comment level, comment content
 
-## Pricing
+<details>
+<summary>View full comment fields</summary>
 
-| Plan | Duration | Price | Purchase Limit | Suitable For |
-|------|----------|-------|----------------|--------------|
-| Daily Pass | 1 day | ¥39 | One-time | Trial or temporary needs |
-| Monthly Pass | 1 month | ¥149 | Multiple | Short-term collection needs |
-| Quarterly Pass | 3 months | ¥399 | Multiple | Medium-term collection needs |
-| Annual Pass | 1 year | ¥799 | Multiple | Long-term collection needs |
+Weibo link, Weibo id, page, commenter nickname, commenter followers, commenter following, commenter profile link, commenter gender, commenter bio, comment time, likes, comment IP location, comment level, comment content
 
-### Purchase Options
+</details>
 
-**Option 1: Self-Service (Recommended)**
-- Link: https://mgnb.pro/product/weibo
+### User Profile Data
 
-**Option 2: Self-Service**
-- Link: https://kjyjf.xetlk.com/s/1x4Q4F
+- Basic info: user profile link, uid, nickname, gender, IP location, location
+- Verification info: verification type, verification information, Sunshine Credit, Zhima Credit, real-name status
+- Account info: short description, profile bio, membership level, custom domain, Weibo ID, user tags, avatar URL
+- Statistics: followers, following, Weibo count, total reposts, total comments, total likes, total interactions
+- Other info: top user status, celebrity flag, birthday, registration time
 
-**Option 3: Manual Setup**
-- After payment, add WeChat (493882434) to connect
-<img width="2324" height="604" alt="收款码v5" src="https://github.com/user-attachments/assets/8bf1ac21-3207-4c7b-ac29-937bdcb36398" />
+<details>
+<summary>View full user profile fields</summary>
 
----
+User profile link, uid, nickname, gender, IP location, location, verification type, verification information, short description, profile bio, followers, following, Weibo count, total reposts, total comments, total likes, total interactions, Sunshine Credit, Zhima Credit, membership level, real-name status, custom domain, Weibo ID, user tags, top user status, celebrity flag, avatar URL, birthday, registration time
 
-## Security & Usage Limits
+</details>
 
-- To prevent software resale, a **one-device-one-code** mechanism is used. Each code can only run on one computer
-- Only one software instance is allowed per computer (multi-instance is not supported)
+## 🛠️ Technical Notes
 
----
+The software is developed in Python. Core modules include:
 
-## Author Info
+| Module | Purpose |
+| --- | --- |
+| tkinter | GUI interface |
+| requests | API requests |
+| json | Response parsing |
+| pandas | CSV export |
+| logging | Runtime logging |
 
-This software is independently developed and maintained by me, with long-term updates and stable operation guaranteed.
+The software collects data through interface requests and does not rely on browser automation or RPA-style operations. During collection, results are saved by page by default. The request interval is usually about 1-2 seconds, which helps control the collection pace and reduce data loss caused by unexpected interruptions.
 
-**Official Account:** "老男孩的平凡之路"
-**Reply "爬微博聚合软件" in the account's backend to get the latest installation package.
-<img width="1938" height="364" alt="二维码-公众号放底部v2" src="https://github.com/user-attachments/assets/4ca80801-0ac1-4cc2-924d-10c0a95eaa2e" />
+## 💰 Pricing
 
----
+| Plan | Duration | Price | Recommended Usage |
+| --- | --- | --- | --- |
+| Day pass | 1 day | 39 CNY | Trial use or small one-time tasks |
+| Monthly pass | 1 month | 149 CNY | Short-term collection needs |
+| Quarterly pass | 3 months | 399 CNY | Medium-term collection needs |
+| Yearly pass | 1 year | 799 CNY | Long-term stable use |
 
-## Disclaimer
+Purchase page: [https://mgnb.pro/product/weibo](https://mgnb.pro/product/weibo)
 
-This tool is for **academic exchange purposes only**. Please strictly comply with relevant laws and regulations, ensure the legality and compliance of platform content, and **prohibit any commercial use**!
+## 🔐 License and Activation Rules
+
+- The software uses a one-device-one-license mechanism. One license key can only be used on one computer.
+- Only one software instance is allowed on a single computer. Multiple concurrent instances are not supported.
+- The software is maintained by the author, and future versions will be published through GitHub Releases.
+
+## ❓ FAQ
+
+### Do I need to install Python?
+
+No. The software is packaged as a desktop client. Download the version for your operating system and run it directly.
+
+### What is the cookie used for?
+
+The cookie allows the software to access platform data under your current account session. Please use your own account cookie and keep related files secure.
+
+### Will collected data be lost if the task is interrupted?
+
+The software saves CSV files by page instead of waiting until the whole task is complete. If the task is interrupted, data from completed pages is usually still preserved in the result files.
+
+### Where are result files saved?
+
+By default, result files are saved in the software directory. CSV files and log files are generated by feature module.
+
+### How much data can it collect?
+
+The actual amount of data depends on the keyword, account status, platform API response, network environment, and collection frequency. It is recommended to set a reasonable collection range and request interval.
+
+### What should I do if an error occurs?
+
+Check the log files under the `logs` directory first. When reporting an issue, please provide:
+
+- Software version
+- Operating system
+- Feature module used
+- Keyword, creator profile link, or Weibo post link entered
+- Error screenshot
+- Log content around the time when the error occurred
+
+## ⚠️ Compliance Statement
+
+This software is intended only for lawful data analysis, learning, research, and authorized business scenarios. Users are responsible for complying with the target platform's terms of service, privacy policy, and applicable laws and regulations.
+
+Do not use this software for:
+
+- High-frequency, malicious, or destructive requests
+- Unauthorized collection, distribution, or sale of sensitive personal information
+- Activities that infringe the lawful rights of platforms, creators, or users
+- Any other behavior that violates laws, regulations, or platform rules
+
+Users are solely responsible for risks and liabilities caused by improper use.
+
+## 📦 Get the Software
+
+- GitHub Releases: [https://github.com/mashukui/weibo_one_spider/releases/](https://github.com/mashukui/weibo_one_spider/releases/)
+- WeChat official account: `老男孩的平凡之路`
+- Reply in the WeChat official account: `爬微博聚合软件`
+
+<img alt="二维码-公众号放底部v3" src="https://github.com/user-attachments/assets/02ec841d-8d8f-4c7e-a609-c21a39bb572c" />
