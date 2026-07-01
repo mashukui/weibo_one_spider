@@ -234,8 +234,6 @@ cookie用于让软件以当前账号状态访问平台数据。请使用自己�
 ## 📦 获取软件
 
 - GitHub Releases：[https://github.com/mashukui/weibo_one_spider/releases/](https://github.com/mashukui/weibo_one_spider/releases/)
-- 公众号：`老男孩的平凡之路`
-- 公众号后台回复：`爬微博聚合软件`
+- 公众号 `老男孩的平凡之路` 后台回复：`微博`
 
-<img alt="二维码-公众号放底部v3" src="https://github.com/user-attachments/assets/02ec841d-8d8f-4c7e-a609-c21a39bb572c" />
-
+<img width="573" height="196" alt="二维码-公众号放底部v4" src="https://github.com/user-attachments/assets/43f0692f-4f72-4a2c-9a57-d894483412a3" />
