@@ -238,6 +238,6 @@ Users are solely responsible for risks and liabilities caused by improper use.
 
 - GitHub Releases: [https://github.com/mashukui/weibo_one_spider/releases/](https://github.com/mashukui/weibo_one_spider/releases/)
 - WeChat official account: `老男孩的平凡之路`
-- Reply in the WeChat official account: `爬微博聚合软件`
+- Reply in the WeChat official account: `微博`
 
-<img alt="二维码-公众号放底部v3" src="https://github.com/user-attachments/assets/02ec841d-8d8f-4c7e-a609-c21a39bb572c" />
+<img width="573" height="196" alt="二维码-公众号放底部v4" src="https://github.com/user-attachments/assets/4c616078-69d0-49ba-9322-4d8aba56d425" />
