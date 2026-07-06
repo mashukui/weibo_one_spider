@@ -237,7 +237,3 @@ cookie用于让软件以当前账号状态访问平台数据。请使用自己�
 - 公众号 `老男孩的平凡之路` 后台回复：`微博`
 
 <img width="573" height="196" alt="二维码-公众号放底部v4" src="https://github.com/user-attachments/assets/43f0692f-4f72-4a2c-9a57-d894483412a3" />
-
----
-
-© 2026 马哥python说 | [访问统计](https://hm.baidu.com/hm.gif?si=753d4ddb95d9ae22c0f33aea9b0f8c1d&et=0&ep=&nv=0&st=4)
