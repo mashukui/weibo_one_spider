@@ -222,25 +222,26 @@
         .carousel-slide {
             min-width: 100%;
             position: relative;
-            aspect-ratio: 16 / 10;
             line-height: 0;
-            background: #111827;
         }
         .carousel-slide img {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
+            height: auto;
             display: block;
         }
-        .carousel-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,.75));
+        .carousel-caption-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
             color: #fff;
-            padding: 2rem 1.5rem 1.2rem;
+            background: #1a1a2e;
+            border-top: 1px solid rgba(255,255,255,.12);
+            padding: .85rem 4.5rem;
             font-size: .95rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.45;
         }
         /* Placeholder slide (no image) */
         .carousel-placeholder {
@@ -295,19 +296,15 @@
         .carousel-next { right: 1rem; }
         .carousel-dots {
             position: absolute;
-            bottom: 1rem;
+            bottom: 4.6rem;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             gap: .5rem;
             z-index: 10;
-            max-width: calc(100% - 7rem);
-            padding: .35rem .5rem;
-            border-radius: 999px;
-            background: rgba(0,0,0,.28);
-            backdrop-filter: blur(6px);
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 1rem;
         }
         .carousel-dot {
             width: 10px;
@@ -593,6 +590,7 @@
         <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">◀</button>
         <button class="carousel-btn carousel-next" onclick="moveSlide(1)">▶</button>
         <div class="carousel-dots" id="carouselDots"></div>
+        <div class="carousel-caption-bar" id="carouselCaption">搜索微博采集界面</div>
     </div>
     <p style="text-align:center;margin-top:.8rem;font-size:.85rem;color:var(--muted);">
         <span class="lang-zh">💡 提示：截图来自软件界面，实际效果请下载客户端体验。视频演示见 <a href="https://www.bilibili.com/video/BV1ayvYBNEFb/" target="_blank" style="color:var(--red);">B站教程</a></span>
@@ -786,6 +784,7 @@
 var currentSlide = 0;
 var track = document.getElementById('carouselTrack');
 var dotsContainer = document.getElementById('carouselDots');
+var caption = document.getElementById('carouselCaption');
 var carouselImages = [
     { src: 'images/v1.2_mac_1.png', zh: '搜索微博采集界面', en: 'Keyword search crawling interface' },
     { src: 'images/v1.2_mac_2.png', zh: '博主主页采集界面', en: 'Profile posts crawling interface' },
@@ -807,8 +806,6 @@ function renderCarousel() {
     track.innerHTML = carouselImages.map(function(item, index) {
         return '<div class="carousel-slide">' +
             '<img src="' + item.src + '" alt="' + item.zh + '" loading="' + (index === 0 ? 'eager' : 'lazy') + '">' +
-            '<div class="carousel-caption lang-zh">' + item.zh + '</div>' +
-            '<div class="carousel-caption lang-en">' + item.en + '</div>' +
         '</div>';
     }).join('');
     dotsContainer.innerHTML = carouselImages.map(function(_, index) {
@@ -820,6 +817,8 @@ function renderCarousel() {
 function updateCarousel() {
     track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
     dots.forEach(function(d, i) { d.classList.toggle('active', i === currentSlide); });
+    var lang = document.documentElement.getAttribute('lang') === 'en' ? 'en' : 'zh';
+    caption.textContent = carouselImages[currentSlide][lang];
 }
 function moveSlide(dir) {
     currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
@@ -849,6 +848,7 @@ function switchLang(lang) {
         btn.classList.toggle('active',
             btn.textContent.trim() === (lang === 'zh-CN' ? '中文' : 'EN'));
     });
+    updateCarousel();
     // save preference
     try { localStorage.setItem('weibo-crawler-lang', lang); } catch(e) {}
 }
