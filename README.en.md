@@ -4,7 +4,7 @@
 >
 > 💡 Supports Windows/macOS with no Python environment required. This repository is used for software introduction, release distribution, usage documentation, and issue feedback. The complete source code is not publicly available.
 >
-> [⬇️Download Latest Release](https://github.com/mashukui/weibo_one_spider/releases/) | [🎬Video Demo](https://www.bilibili.com/video/BV1ayvYBNEFb/) | [💳Purchase Access](https://mgnb.pro/product/weibo)
+> [⬇️Download Latest Release](https://github.com/mashukui/weibo_one_spider/releases/) | [🎬Video Demo](https://www.bilibili.com/video/BV1ayvYBNEFb/) | [🏠Homepage](https://mashukui.github.io/weibo_one_spider/) | [💳Purchase Access](https://mgnb.pro/product/weibo)
 
 <p align="center">
   <a href="README.md">简体中文 README</a> | <a href="README.en.md">English README</a>
