@@ -1,4 +1,10 @@
+<div align="center">
+
 # weibo_one_spider
+
+[![Release](https://img.shields.io/github/v/release/mashukui/weibo_one_spider?style=flat)](https://github.com/mashukui/weibo_one_spider/releases) [![最近更新](https://img.shields.io/github/release-date/mashukui/weibo_one_spider?style=flat)](https://github.com/mashukui/weibo_one_spider/releases) ![平台](https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-Windows%20%7C%20macOS-blue?style=flat)
+
+</div>
 
 > 🔥 微博数据采集工具 / Weibo crawler GUI，支持关键词微博采集、主页微博采集、评论采集、用户信息采集和 CSV 导出。
 >
@@ -39,7 +45,7 @@
 1. 打开 [Releases](https://github.com/mashukui/weibo_one_spider/releases/) 下载最新版软件。
 2. 解压后运行对应系统的客户端。
 3. 使用软件内置的 cookie 小工具完成 cookie 配置。
-4. 登录软件账号。
+4. 登录软件账号（还没账号？[日卡 19 元起，支付秒开通](#-价格说明)）。
 5. 选择采集模块，填写关键词、微博帖子链接或博主主页链接。
 6. 点击「开始执行」，等待采集完成。
 7. 在软件所在目录查看 CSV 文件和日志文件。
@@ -57,41 +63,41 @@
 
 关键词微博采集界面：
 
-![界面1：微博搜索帖子](https://files.mdnice.com/user/32110/b3733f08-bc3c-45c9-816a-a6c4e31bd5f4.jpg)
+![界面1：微博搜索帖子](docs/images/readme/wb_01.jpg)
 
 关键词微博采集结果：
 
-![结果1：微博搜索帖子](https://files.mdnice.com/user/32110/82fb0f17-ff01-4575-b8eb-d9544698b2db.png)
+![结果1：微博搜索帖子](docs/images/readme/wb_02.png)
 
 ### 主页微博采集
 
 主页微博采集界面：
 
-![界面2：根据主页采集帖子](https://files.mdnice.com/user/32110/129dcbc2-2e5c-4c18-9781-6d89504e77e5.jpg)
+![界面2：根据主页采集帖子](docs/images/readme/wb_03.jpg)
 
 主页微博采集结果：
 
-![结果2：根据主页采集帖子](https://files.mdnice.com/user/32110/2bc591c3-1d37-4bb6-92f4-708c9f592d95.png)
+![结果2：根据主页采集帖子](docs/images/readme/wb_04.png)
 
 ### 评论采集
 
 评论采集界面：
 
-![界面3：根据帖子采集评论](https://files.mdnice.com/user/32110/6de6ec3c-4a5f-4e77-8bb9-d36b84158888.jpg)
+![界面3：根据帖子采集评论](docs/images/readme/wb_05.jpg)
 
 评论采集结果：
 
-![结果3：根据帖子采集评论](https://files.mdnice.com/user/32110/9bafd8c5-06d0-40cb-9b89-d1e4cbeb0220.png)
+![结果3：根据帖子采集评论](docs/images/readme/wb_06.png)
 
 ### 用户信息采集
 
 用户信息采集界面：
-![界面4：采集用户信息](https://files.mdnice.com/user/32110/d9925556-0d44-4024-adba-b63b832cc9ab.jpg)
+![界面4：采集用户信息](docs/images/readme/wb_07.jpg)
 
 用户信息-数据1/2:
-![v2.0_数据1](https://files.mdnice.com/user/32110/3cda495c-36aa-49b5-835f-83c4c8ebac8b.png)
+![v2.0_数据1](docs/images/readme/wb_08.png)
 用户信息-数据2/2:
-![v2.0_数据2](https://files.mdnice.com/user/32110/94e2d80b-8598-414d-b18a-d3b8499409f0.png)
+![v2.0_数据2](docs/images/readme/wb_09.png)
 
 
 ## 📊 输出字段
@@ -185,7 +191,24 @@
 - 一台电脑仅允许运行一个软件实例，不支持多开。
 - 软件由作者长期维护，后续版本通过 [GitHub Releases](https://github.com/mashukui/weibo_one_spider/releases/) 发布。
 
+## 🕒 更新日志
+
+| 版本 | 发布日期 | 更新内容 |
+|---|---|---|
+| v2.0 | 2026-06-05 | 新增用户信息采集（按主页链接批量，29 个字段） |
+| v1.2 | 2026-03-24 | 新增用户注册入口；新增自定义等待间隔 |
+
+> 完整更新历史见 [Releases](https://github.com/mashukui/weibo_one_spider/releases)
+
 ## ❓ 常见问题
+
+### 换电脑或重装系统后还能用吗？
+
+可以。授权采用一机一码，一个账号绑定一台电脑；如需更换设备，请联系[公众号「老男孩的平凡之路」](https://github.com/mashukui/mashukui/blob/main/wechat2.png)后台申请解绑，处理后即可在新电脑登录使用。
+
+### 软件更新需要重新购买吗？
+
+不需要。授权有效期内，后续版本均通过 [GitHub Releases](https://github.com/mashukui/weibo_one_spider/releases) 免费更新，下载最新版覆盖安装即可。
 
 ### 是否需要安装Python？
 
@@ -237,3 +260,10 @@ cookie用于让软件以当前账号状态访问平台数据。请使用自己�
 - 公众号 `老男孩的平凡之路` 后台回复：`微博`
 
 <img width="573" height="196" alt="二维码-公众号放底部v4" src="https://github.com/user-attachments/assets/43f0692f-4f72-4a2c-9a57-d894483412a3" />
+
+
+---
+
+<p align="center">
+更多采集工具（抖音 / 小红书 / 微博 / 蒲公英 / 油管等 7 款）：<a href="https://mgnb.pro">马哥数据采集工坊</a>
+</p>

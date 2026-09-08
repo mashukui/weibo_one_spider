@@ -1,4 +1,10 @@
+<div align="center">
+
 # weibo_one_spider
+
+[![Release](https://img.shields.io/github/v/release/mashukui/weibo_one_spider?style=flat)](https://github.com/mashukui/weibo_one_spider/releases) [![Last Update](https://img.shields.io/github/release-date/mashukui/weibo_one_spider?style=flat)](https://github.com/mashukui/weibo_one_spider/releases) ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS-blue?style=flat)
+
+</div>
 
 > 🔥 Weibo data collection tool / Weibo crawler GUI, supporting keyword Weibo post collection, profile post collection, comment collection, user profile collection, and CSV export.
 >
@@ -39,7 +45,7 @@ It is suitable for the following scenarios:
 1. Open [Releases](https://github.com/mashukui/weibo_one_spider/releases/) and download the latest version.
 2. Extract the package and run the client for your operating system.
 3. Use the built-in cookie helper to configure your cookie.
-4. Log in to the software account.
+4. Log in to the software account (no account yet? [Day pass from 19 CNY, instant activation](#-pricing)).
 5. Select a collection module and enter a keyword, Weibo post link, or creator profile link.
 6. Click "Start" and wait for the collection task to finish.
 7. Check the CSV files and log files in the software directory.
@@ -57,45 +63,45 @@ It is suitable for the following scenarios:
 
 Keyword Weibo post collection interface:
 
-![Interface 1: Weibo keyword post search](https://files.mdnice.com/user/32110/b3733f08-bc3c-45c9-816a-a6c4e31bd5f4.jpg)
+![Interface 1: Weibo keyword post search](docs/images/readme/wb_01.jpg)
 
 Keyword Weibo post collection result:
 
-![Result 1: Weibo keyword posts](https://files.mdnice.com/user/32110/82fb0f17-ff01-4575-b8eb-d9544698b2db.png)
+![Result 1: Weibo keyword posts](docs/images/readme/wb_02.png)
 
 ### Profile Weibo Post Collection
 
 Profile Weibo post collection interface:
 
-![Interface 2: Profile post collection](https://files.mdnice.com/user/32110/129dcbc2-2e5c-4c18-9781-6d89504e77e5.jpg)
+![Interface 2: Profile post collection](docs/images/readme/wb_03.jpg)
 
 Profile Weibo post collection result:
 
-![Result 2: Profile posts](https://files.mdnice.com/user/32110/2bc591c3-1d37-4bb6-92f4-708c9f592d95.png)
+![Result 2: Profile posts](docs/images/readme/wb_04.png)
 
 ### Comment Collection
 
 Comment collection interface:
 
-![Interface 3: Comment collection from post](https://files.mdnice.com/user/32110/6de6ec3c-4a5f-4e77-8bb9-d36b84158888.jpg)
+![Interface 3: Comment collection from post](docs/images/readme/wb_05.jpg)
 
 Comment collection result:
 
-![Result 3: Post comments](https://files.mdnice.com/user/32110/9bafd8c5-06d0-40cb-9b89-d1e4cbeb0220.png)
+![Result 3: Post comments](docs/images/readme/wb_06.png)
 
 ### User Profile Collection
 
 User profile collection interface:
 
-![Interface 4: User profile collection](https://files.mdnice.com/user/32110/d9925556-0d44-4024-adba-b63b832cc9ab.jpg)
+![Interface 4: User profile collection](docs/images/readme/wb_07.jpg)
 
 User profile data 1/2:
 
-![v2.0 data 1](https://files.mdnice.com/user/32110/3cda495c-36aa-49b5-835f-83c4c8ebac8b.png)
+![v2.0 data 1](docs/images/readme/wb_08.png)
 
 User profile data 2/2:
 
-![v2.0 data 2](https://files.mdnice.com/user/32110/94e2d80b-8598-414d-b18a-d3b8499409f0.png)
+![v2.0 data 2](docs/images/readme/wb_09.png)
 
 ## 📊 Output Fields
 
@@ -184,11 +190,28 @@ Purchase page: [https://mgnb.pro/product/weibo](https://mgnb.pro/product/weibo)
 
 ## 🔐 License and Activation Rules
 
-- The software uses a one-device-one-license mechanism. One license key can only be used on one computer.
+- The software uses account and password login (a phone number and password are provided after purchase). One account can only be used on one computer.
 - Only one software instance is allowed on a single computer. Multiple concurrent instances are not supported.
 - The software is maintained by the author, and future versions will be published through GitHub Releases.
 
+## 🕒 Changelog
+
+| Version | Date | Notes |
+|---|---|---|
+| v2.0 | 2026-06-05 | Added user info collection (batch by profile link, 29 fields) |
+| v1.2 | 2026-03-24 | Added registration entry; added custom request interval |
+
+> For the full release history, see [Releases](https://github.com/mashukui/weibo_one_spider/releases)
+
 ## ❓ FAQ
+
+### Can I use the software after changing computers or reinstalling the system?
+
+Yes. Activation is bound to one computer per account. To switch devices, contact the [WeChat official account 老男孩的平凡之路](https://github.com/mashukui/mashukui/blob/main/wechat2.png) and request unbinding; after that you can log in on the new computer.
+
+### Do I need to purchase again for software updates?
+
+No. During the license period, all future versions are freely available on [GitHub Releases](https://github.com/mashukui/weibo_one_spider/releases). Just download the latest version and reinstall.
 
 ### Do I need to install Python?
 
@@ -241,3 +264,10 @@ Users are solely responsible for risks and liabilities caused by improper use.
 - Reply in the WeChat official account: `微博`
 
 <img width="573" height="196" alt="二维码-公众号放底部v4" src="https://github.com/user-attachments/assets/4c616078-69d0-49ba-9322-4d8aba56d425" />
+
+
+---
+
+<p align="center">
+More collection tools (Douyin / Xiaohongshu / Weibo / PGY / YouTube, 7 in total): <a href="https://mgnb.pro">马哥数据采集工坊 (mgnb.pro)</a>
+</p>
